@@ -1,6 +1,6 @@
 //该文件专门为count组件生成action对象
-import { INCREMENT,DECREMENT } from "./constant";
-import store from "./store";
+import { INCREMENT,DECREMENT } from "../constant";
+import store from "../store";
 //同步action
 const creatIncrementAction=(data)=>({type:INCREMENT,data})
 const creatDecrementAction=(data)=>({type:DECREMENT,data})
