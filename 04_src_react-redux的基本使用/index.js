@@ -4,10 +4,9 @@ import React from "react";
 import { createRoot } from 'react-dom/client';
 //引入App
 import App  from'./App'
- import store from "./redux/store";
- import { Provider } from "react-redux";
+import store from "./redux/store";
 //渲染组件到页面
 const root =createRoot(document.getElementById('root'))
-root.render(<Provider store={store}><App /></Provider>)
+root.render(<App />)
 //监测redux中状态的改变
-// store.subscribe(()=>{root.render(<App />)})
+store.subscribe(()=>{root.render(<App />)})

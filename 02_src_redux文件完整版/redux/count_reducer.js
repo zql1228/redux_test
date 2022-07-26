@@ -8,8 +8,8 @@ function countReducer(preState=initState,action){
            return preState+data
         case DECREMENT:
             return preState-data;
-        default: 
-            return preState
+        defalut: 
+        return preState
     }
 }
 export default countReducer
